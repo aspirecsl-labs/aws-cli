@@ -22,3 +22,12 @@
 - `--port` specifies the port to allow the traffic
 - `--protocol` specifies the protocol to allow (for example:- tcp)
 - `--cidr` specifies the allowed ip (0.0.0.0/0 allows traffic from everywhere)
+
+**aws ec2 create-key-pair**
+- generates an SSH key pair at EC2
+- `--key-name` specifies the name of the key
+- the private key of the SSH key pair is specified as the _KeyMaterial_ in the command output
+
+**aws ec2 describe-key-pairs**
+- describes the specified key pair or all key pairs
+- `--key-name` specifies a key pair name
