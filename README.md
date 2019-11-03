@@ -4,6 +4,9 @@
 - sets up aws cli 
 - requires: access key, secret access key, AWS Region, and output format `(default: json)`
 
+**aws iam list-users**
+- lists the IAM users for the AWS account
+
 **aws ec2 describe-images**
 - describes AWS EC2 images available to you
 - *--filter* - filters the results (to filter on RHEL images:- `--filer "Name=description, Values=*RHEL*"`)
