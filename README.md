@@ -9,9 +9,9 @@
 
 **aws ec2 describe-images**
 - describes AWS EC2 images available to you
-- *--filter* - filters the results (to filter on RHEL images:- `--filer "Name=description, Values=*RHEL*"`)
-- *--query* - queries the values from the results (for example:- `--query 'Images[*].[CreationDate, ImageId]'`)
-- *--output* - specifies the output format (for example:- `--output text`)
+- _--filter_ - filters the results (to filter on RHEL images:- `--filer "Name=description, Values=*RHEL*"`)
+- _--query_ - selects values from the results (for example:- `--query 'Images[*].[CreationDate, ImageId]'`)
+- _--output_ - specifies the output format (for example:- `--output text`)
 
 **aws ec2 describe-vpcs**
 - describes the _virtual private clouds_ available
@@ -41,3 +41,8 @@
 - `--key-name` specifies the SSH key pair name to use for this instance
 - `--security-group-ids` specifes the security group ids to use for this instance
 - `--image-id` specifies the machine image id to use for this instance _(obtained via `aws ec2 describe-images` command)_
+
+**aws ec2 describe-instance-status**
+- describes the status of an EC2 instance
+- `--instance-ids` specifies the ids of the instances being queried
+- _--query_ can be used to select values from the output
