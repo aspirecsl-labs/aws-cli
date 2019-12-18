@@ -34,3 +34,10 @@
 **aws ec2 describe-key-pairs**
 - describes the specified key pair or all key pairs
 - `--key-name` specifies a key pair name
+
+**aws ec2 run-instances**
+- runs (creating if absent) an EC2 instance
+- `--instance.type` specifies the instance type (for example:- t2.micro)
+- `--key-name` specifies the SSH key pair name to use for this instance
+- `--security-group-ids` specifes the security group ids to use for this instance
+- `--image-id` specifies the machine image id to use for this instance _(obtained via `aws ec2 describe-images` command)_
