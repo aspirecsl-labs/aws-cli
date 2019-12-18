@@ -43,6 +43,12 @@
 - `--image-id` specifies the machine image id to use for this instance _(obtained via `aws ec2 describe-images` command)_
 
 **aws ec2 describe-instance-status**
-- describes the status of an EC2 instance
+- describes the status of an EC2 instance specified by the instance ids
+- `--instance-ids` specifies the ids of the instances being queried
+- _--query_ can be used to select values from the output
+
+
+**aws ec2 describe-instances**
+- describes an EC2 instance specified by the instance ids
 - `--instance-ids` specifies the ids of the instances being queried
 - _--query_ can be used to select values from the output
